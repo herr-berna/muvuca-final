@@ -1,3 +1,9 @@
+:root {
+    --main-color: #E91E63;
+    --main-color-darker: #871239;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -43,7 +49,108 @@ html {
     }
 }
 
-@media (min-width: 1024px) {
+#about {
+    .about-keywords {
+        font-variant: small-caps;
+        color: var(--main-color-darker);
+        font-size: 1.3rem;
+    }
+
+    .about-descrip {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+//Cores dos links 
+
+p>a {
+    color: var(--main-color);
+}
+
+p>a:hover {
+    color: var(--main-color-darker);
+}
+
+//iframe form
+
+iframe {
+    border: 0;
+    height: 730px;
+    width: 400px;
+}
+
+// Fontes
+
+span {
+    font-family: sans-serif !important;
+}
+
+b {
+    color: #222;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.nav-item {
+    .link-contact {
+        width: 130px;
+    }
+}
+
+#schedules {
+    .sche-descrip {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin: 1rem auto;
+    }
+}
+
+#sponsors {
+
+    .spon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spnsors-logo {
+        max-width: 500px;
+    }
+
+    .spnsors-descrip {
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .about-cta {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    .telegram-link {
+        margin-top: .6rem;
+    }
+}
+
+#contact-map {
+    .sign-up-cta {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1.4rem;
+    }
+}
+
+@media (min-width: 1023px) {
     .hero-container {
         height: 100vh;
 
@@ -55,9 +162,41 @@ html {
             font-size: 1.1rem;
         }
     }
+
+
+    #sponsors {
+
+        .spon-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        .spnsors-descrip {
+            p {
+                text-align: left;
+                max-width: 400px;
+                margin-left: 3rem;
+            }
+
+            .about-cta {
+                margin-top: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    iframe {
+        border: 0;
+        height: 650px;
+        width: 800px;
+    }
+
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1599px) {
     .hero-container {
         h1 {
             font-size: 4rem;
