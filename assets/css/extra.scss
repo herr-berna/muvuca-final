@@ -150,6 +150,10 @@ b {
     }
 }
 
+iframe {
+    height: 900px;
+}
+
 @media (min-width: 1023px) {
     .hero-container {
         height: 100vh;
@@ -190,7 +194,7 @@ b {
 
     iframe {
         border: 0;
-        height: 650px;
+
         width: 800px;
     }
 
